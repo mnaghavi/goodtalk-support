@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoodTalk Support</title>
+  <meta
+    name="description"
+    content="Official support page for GoodTalk. Get help, contact support, and learn about GoodTalk features."
+  />
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #1e293b;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --text: #e5e7eb;
+      --muted: #cbd5e1;
+      --accent: #a78bfa;
+      --accent2: #22d3ee;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(167, 139, 250, 0.25), transparent 30%),
+        radial-gradient(circle at top right, rgba(34, 211, 238, 0.2), transparent 30%),
+        linear-gradient(160deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .hero {
+      padding: 48px 28px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      backdrop-filter: blur(14px);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--card-border);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(34px, 7vw, 60px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      font-size: clamp(17px, 2.2vw, 21px);
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .hero-actions {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      opacity: 0.96;
+    }
+
+    .button-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 10px 24px rgba(34, 211, 238, 0.18);
+    }
+
+    .button-secondary {
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .card {
+      grid-column: span 12;
+      padding: 22px;
+      border-radius: 22px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .features li {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .features strong {
+      color: var(--text);
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .email {
+      word-break: break-word;
+    }
+
+    @media (min-width: 760px) {
+      .card-half {
+        grid-column: span 6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">Official GoodTalk Support</div>
+      <h1>Help for better conversations.</h1>
+      <p class="lead">
+        GoodTalk is a messaging app designed to help people communicate with more clarity,
+        care, and confidence. Whether you are improving wording, softening tone, or asking
+        for help in the moment, GoodTalk gives you support right inside your chats.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="mailto:aphelionsoftware.gp@gmail.com">
+          Contact Support
+        </a>
+        <a class="button button-secondary" href="#features">
+          View Features
+        </a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card card-half">
+        <h2>Need help?</h2>
+        <p>
+          For support, questions, bug reports, or feedback, email us at:
+        </p>
+        <p style="margin-top: 12px;">
+          <a class="email" href="mailto:aphelionsoftware.gp@gmail.com" style="color:#ffffff; font-weight:700; text-decoration:none;">
+            aphelionsoftware.gp@gmail.com
+          </a>
+        </p>
+      </article>
+
+      <article class="card card-half">
+        <h2>What GoodTalk does</h2>
+        <p>
+          GoodTalk helps you send messages that are clearer, more respectful, and more true
+          to what you mean.
+        </p>
+      </article>
+
+      <article class="card" id="features">
+        <h2>Core features</h2>
+        <ul class="features">
+          <li>
+            <strong>Coach Mode</strong><br />
+            Refine your message before sending. GoodTalk helps reduce harsh wording,
+            improve tone, and make conversations more thoughtful.
+          </li>
+          <li>
+            <strong>Touch Up Mode</strong><br />
+            Keep your original meaning while improving grammar, clarity, and phrasing.
+            It respects your voice instead of replacing it.
+          </li>
+          <li>
+            <strong>Aria Mode</strong><br />
+            Ask <strong>@aria</strong> for help directly in your chat. Get suggestions,
+            perspective, and support while the conversation is happening.
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Feedback</h2>
+        <p>
+          We are always improving GoodTalk. If something is not working as expected or you
+          have ideas for making the app better, send us a message. We would love to hear from you.
+        </p>
+      </article>
+    </section>
+
+    <div class="footer">
+      © 2026 GoodTalk. All rights reserved.
+    </div>
+  </main>
+</body>
+</html>
