@@ -4,43 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GoodTalk Privacy Policy</title>
+
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin-inline: auto;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
+    :root {
+      --bg1: #0f172a;
+      --bg2: #1e293b;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --text: #e5e7eb;
+      --muted: #cbd5e1;
+      --accent: #a78bfa;
+      --accent2: #22d3ee;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     }
-    h1 { margin-bottom: 10px; }
-    h2 { margin-top: 30px; }
-    a { color: #4f46e5; text-decoration: none; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(167,139,250,0.25), transparent 30%),
+        radial-gradient(circle at top right, rgba(34,211,238,0.2), transparent 30%),
+        linear-gradient(160deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 28px;
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 40px;
+    }
+
+    h2 {
+      margin-top: 26px;
+      font-size: 20px;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back {
+      margin-top: 24px;
+      display: inline-block;
+      color: var(--muted);
+    }
   </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>GoodTalk</strong></p>
+  <main class="wrap">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p><strong>GoodTalk</strong></p>
 
-  <p>GoodTalk is designed to help users communicate more clearly and thoughtfully.</p>
+      <p>
+        GoodTalk helps you communicate more clearly and thoughtfully. This policy explains how we handle your data.
+      </p>
 
-  <h2>Information We Collect</h2>
-  <p>We may collect information you provide directly, such as messages, account details, and feedback.</p>
+      <h2>Information We Collect</h2>
+      <p>
+        We may collect information you provide directly, including messages, account details, and feedback.
+      </p>
 
-  <h2>How We Use Information</h2>
-  <p>We use information to provide, improve, and personalize the app experience, including AI-powered features.</p>
+      <h2>How We Use Information</h2>
+      <p>
+        Information is used to operate, improve, and personalize the app, including AI-powered features like coaching and message refinement.
+      </p>
 
-  <h2>Data Sharing</h2>
-  <p>We do not sell your personal data. Data may be processed by trusted services to operate the app.</p>
+      <h2>Data Sharing</h2>
+      <p>
+        We do not sell your personal data. Data may be processed by trusted services required to run the app.
+      </p>
 
-  <h2>Security</h2>
-  <p>We take reasonable measures to protect your data.</p>
+      <h2>Security</h2>
+      <p>
+        We take reasonable steps to protect your data, but no system is completely secure.
+      </p>
 
-  <h2>Contact</h2>
-  <p>Email: aphelionsoftware.gp@gmail.com</p>
+      <h2>Contact</h2>
+      <p>
+        aphelionsoftware.gp@gmail.com
+      </p>
 
-  <p><a href="/">← Back to Support</a></p>
+      <a class="back" href="/">← Back to Support</a>
+    </div>
+  </main>
 </body>
 </html>
