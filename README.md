@@ -16,7 +16,7 @@ This site is used as the official **Support URL** for the GoodTalk App Store lis
 
 If you need help, have questions, or want to report an issue, contact:
 
-**aphelionsoftware.gp@gmail.com**
+**support.goodtalk@gmail.com**
 
 ## What this repo contains
 
