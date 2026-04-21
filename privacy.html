@@ -4,116 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GoodTalk Privacy Policy</title>
-
-  <style>
-    :root {
-      --bg1: #0f172a;
-      --bg2: #1e293b;
-      --card: rgba(255, 255, 255, 0.08);
-      --card-border: rgba(255, 255, 255, 0.14);
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
-      --accent: #a78bfa;
-      --accent2: #22d3ee;
-      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(167,139,250,0.25), transparent 30%),
-        radial-gradient(circle at top right, rgba(34,211,238,0.2), transparent 30%),
-        linear-gradient(160deg, var(--bg1), var(--bg2));
-      min-height: 100vh;
-    }
-
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--card-border);
-      border-radius: 24px;
-      padding: 28px;
-      backdrop-filter: blur(14px);
-      box-shadow: var(--shadow);
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 40px;
-    }
-
-    h2 {
-      margin-top: 26px;
-      font-size: 20px;
-    }
-
-    p {
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .back {
-      margin-top: 24px;
-      display: inline-block;
-      color: var(--muted);
-    }
-  </style>
+  <meta
+    name="description"
+    content="Read the plain-language privacy overview for GoodTalk, including what information the app may use, how features like AI coaching work, and how to contact the team."
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <main class="wrap">
-    <div class="card">
-      <h1>Privacy Policy</h1>
-      <p><strong>GoodTalk</strong></p>
+  <main class="site-shell">
+    <header class="topbar reveal">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">G</span>
+        <span class="brand-copy">
+          <span class="brand-title">GoodTalk</span>
+          <span class="brand-subtitle">Privacy overview</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="support.html">Support</a>
+        <a class="button button-primary" href="mailto:support.goodtalk@gmail.com">Contact support</a>
+      </nav>
+    </header>
 
+    <section class="page-hero surface reveal delay-1">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>Plain-language privacy for GoodTalk.</h1>
       <p>
-        GoodTalk helps you communicate more clearly and thoughtfully. This policy explains how we handle your data.
+        GoodTalk is built to support sensitive conversations, so privacy and user choice matter.
+        This page gives a simple overview of the kinds of information the app may use to run
+        messaging, AI coaching, discovery, and support.
       </p>
+    </section>
 
-      <h2>Information We Collect</h2>
-      <p>
-        We may collect information you provide directly, including messages, account details, and feedback.
-      </p>
+    <section class="section surface reveal delay-2">
+      <div class="policy-note">
+        <strong>Quick summary</strong>
+        <p>
+          GoodTalk may use account details, message content, optional profile and discovery
+          information, and support communications to operate the app. Some features rely on
+          third-party infrastructure such as Firebase, Apple or Google sign-in, and server-side
+          AI processing. GoodTalk does not sell your personal information.
+        </p>
+      </div>
+    </section>
 
-      <h2>How We Use Information</h2>
-      <p>
-        Information is used to operate, improve, and personalize the app, including AI-powered features like coaching and message refinement.
-      </p>
+    <section class="section surface reveal">
+      <div class="policy-grid">
+        <article class="policy-section span-6">
+          <h2>Information GoodTalk may collect</h2>
+          <ul class="bullet-list">
+            <li>Account and profile details such as your name, username, sign-in method, or avatar</li>
+            <li>Messages, drafts, and message metadata needed to deliver chats and power coaching features</li>
+            <li>Support emails, feedback, and bug reports you send to the team</li>
+            <li>Subscription or usage information needed for Premium and AI budget features</li>
+            <li>Optional phone, contacts, or location data only when those features are enabled by you</li>
+          </ul>
+        </article>
 
-      <h2>Data Sharing</h2>
-      <p>
-        We do not sell your personal data. Data may be processed by trusted services required to run the app.
-      </p>
+        <article class="policy-section span-6">
+          <h2>How information is used</h2>
+          <ul class="bullet-list">
+            <li>To create and manage your account and conversations</li>
+            <li>To refine messages, generate coaching tips, and support <strong>@aria</strong> requests</li>
+            <li>To help people find each other through phone discovery, usernames, or invite flows</li>
+            <li>To send notifications, maintain security, and prevent abuse</li>
+            <li>To improve product quality, troubleshoot issues, and respond to support requests</li>
+          </ul>
+        </article>
 
-      <h2>Security</h2>
-      <p>
-        We take reasonable steps to protect your data, but no system is completely secure.
-      </p>
+        <article class="policy-section span-6">
+          <h2>AI and service providers</h2>
+          <p>
+            GoodTalk uses server-side AI processing for message refinement and assistant features.
+            The app also relies on infrastructure and identity services to support authentication,
+            real-time messaging, notifications, storage, and subscriptions. These providers may
+            process information as needed to deliver the service on GoodTalk's behalf.
+          </p>
+        </article>
 
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:support.goodtalk@gmail.com" style="color:white; font-weight:600; text-decoration:none;">
-          support.goodtalk@gmail.com
-        </a>
-      </p>
+        <article class="policy-section span-6">
+          <h2>Sharing and sale of data</h2>
+          <p>
+            GoodTalk does not sell your personal information. Information may be shared with trusted
+            vendors or service providers when that is necessary to run the app, support users,
+            process subscriptions, maintain infrastructure, or comply with applicable legal obligations.
+          </p>
+        </article>
 
-      <a class="back" href="./">← Back to Support</a>
-    </div>
+        <article class="policy-section span-6">
+          <h2>Your controls</h2>
+          <ul class="bullet-list">
+            <li>You can choose whether to use features like phone discovery, contacts access, or location-aware assistant help</li>
+            <li>You can use a <strong>@username</strong> so people can find you without sharing a phone number</li>
+            <li>You can contact GoodTalk if you have questions about your account or privacy choices</li>
+          </ul>
+        </article>
+
+        <article class="policy-section span-6">
+          <h2>Security and retention</h2>
+          <p>
+            GoodTalk uses reasonable technical and organizational measures to protect the service,
+            but no system can guarantee absolute security. Information may be retained for as long
+            as needed to operate the app, resolve disputes, meet legal requirements, and support
+            legitimate business and security needs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface reveal">
+      <div class="cta-grid">
+        <article class="cta-card">
+          <h3>Questions about privacy?</h3>
+          <p>
+            The fastest way to reach the team is by email. If your question is about support,
+            troubleshooting, or an account issue, the support page may also help.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:support.goodtalk@gmail.com">support.goodtalk@gmail.com</a>
+            <a class="button button-secondary" href="support.html">Open support page</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>&copy; 2026 GoodTalk. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>

@@ -3,272 +3,321 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoodTalk Support</title>
+  <title>GoodTalk | Better Conversations, Right Inside Your Chat</title>
   <meta
     name="description"
-    content="Official support page for GoodTalk. Get help, contact support, and learn about GoodTalk features."
+    content="GoodTalk is an iPhone messaging app that helps people communicate with more clarity, care, and confidence using AI coaching, touch-ups, @aria assistance, and privacy-minded discovery."
   />
-  <style>
-    :root {
-      --bg1: #0f172a;
-      --bg2: #1e293b;
-      --card: rgba(255, 255, 255, 0.08);
-      --card-border: rgba(255, 255, 255, 0.14);
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
-      --accent: #a78bfa;
-      --accent2: #22d3ee;
-      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(167, 139, 250, 0.25), transparent 30%),
-        radial-gradient(circle at top right, rgba(34, 211, 238, 0.2), transparent 30%),
-        linear-gradient(160deg, var(--bg1), var(--bg2));
-      min-height: 100vh;
-    }
-
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-
-    .hero {
-      padding: 48px 28px;
-      border: 1px solid var(--card-border);
-      background: var(--card);
-      backdrop-filter: blur(14px);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid var(--card-border);
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.2px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0 0 14px;
-      font-size: clamp(34px, 7vw, 60px);
-      line-height: 1.02;
-      letter-spacing: -0.03em;
-    }
-
-    .lead {
-      font-size: clamp(17px, 2.2vw, 21px);
-      line-height: 1.6;
-      color: var(--muted);
-      max-width: 760px;
-      margin: 0;
-    }
-
-    .hero-actions {
-      margin-top: 28px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      padding: 14px 18px;
-      border-radius: 14px;
-      font-weight: 700;
-      font-size: 15px;
-      transition: transform 0.15s ease, opacity 0.15s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-1px);
-      opacity: 0.96;
-    }
-
-    .button-primary {
-      color: white;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 10px 24px rgba(34, 211, 238, 0.18);
-    }
-
-    .button-secondary {
-      color: var(--text);
-      border: 1px solid var(--card-border);
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .card {
-      grid-column: span 12;
-      padding: 22px;
-      border-radius: 22px;
-      border: 1px solid var(--card-border);
-      background: var(--card);
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow);
-    }
-
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 22px;
-      letter-spacing: -0.02em;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    .features {
-      list-style: none;
-      padding: 0;
-      margin: 14px 0 0;
-      display: grid;
-      gap: 12px;
-    }
-
-    .features li {
-      padding: 14px 16px;
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .features strong {
-      color: var(--text);
-    }
-
-    .footer {
-      margin-top: 20px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .email {
-      word-break: break-word;
-    }
-
-    @media (min-width: 760px) {
-      .card-half {
-        grid-column: span 6;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <div class="badge">Official GoodTalk Support</div>
-      <h1>Help for better conversations.</h1>
-      <p class="lead">
-        GoodTalk is a messaging app designed to help people communicate with more clarity,
-        care, and confidence. Whether you are improving wording, softening tone, or asking
-        for help in the moment, GoodTalk gives you support right inside your chats.
-      </p>
+  <main class="site-shell">
+    <header class="topbar reveal">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">G</span>
+        <span class="brand-copy">
+          <span class="brand-title">GoodTalk</span>
+          <span class="brand-subtitle">Communication support for real relationships</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="support.html">Support</a>
+        <a class="nav-link" href="privacy.html">Privacy</a>
+        <a class="button button-primary" href="mailto:support.goodtalk@gmail.com">Contact support</a>
+      </nav>
+    </header>
 
-      <div class="hero-actions">
-        <a class="button button-primary" href="mailto:support.goodtalk@gmail.com">
-          Contact Support
+    <section class="hero reveal delay-1">
+      <div class="hero-copy">
+        <div class="eyebrow">Official GoodTalk Pages</div>
+        <h1>Say the hard thing better.</h1>
+        <p class="lead">
+          GoodTalk is an iPhone messaging app built for moments where tone matters. It helps
+          you turn reactive drafts into clearer, kinder, more honest messages without losing
+          your voice, then keeps helping while the conversation is still happening.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#features">Explore the app</a>
+          <a class="button button-secondary" href="support.html">Get support</a>
+        </div>
+
+        <div class="hero-points" aria-label="Highlights">
+          <span class="hero-point">AI coaching before you send</span>
+          <span class="hero-point">Touch-ups that keep your voice</span>
+          <span class="hero-point">@aria support inside the chat</span>
+          <span class="hero-point">Private, safer discovery options</span>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="surface mock-phone reveal delay-2">
+          <div class="phone-top">
+            <span>GoodTalk</span>
+            <span>Coach Mode</span>
+          </div>
+          <div class="phone-screen">
+            <div class="conversation-title">
+              <div>
+                <strong>Conversation with Sarah</strong>
+                <span>Refining a difficult message</span>
+              </div>
+              <span>Now</span>
+            </div>
+
+            <div class="message-stack">
+              <div class="bubble incoming">I feel like you are not hearing what I mean.</div>
+              <div class="bubble outgoing">
+                I hear that you are feeling unheard, and I want to understand better. Can we slow down and talk about it?
+              </div>
+              <div class="bubble aria">
+                <strong>@aria</strong><br />
+                Try leading with what you understood first. It lowers defensiveness and keeps the conversation open.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-grid reveal delay-3">
+          <div class="mini-stat">
+            <strong>Coach Mode</strong>
+            <span>Refines tough messages using Nonviolent Communication style guidance.</span>
+          </div>
+          <div class="mini-stat">
+            <strong>Touch Up</strong>
+            <span>Polishes grammar, clarity, and tone while staying close to your draft.</span>
+          </div>
+          <div class="mini-stat">
+            <strong>Safe discovery</strong>
+            <span>Connect by phone, @username, or invite code without making things awkward.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-strip reveal delay-2" aria-label="Product summary">
+      <div class="summary-pill">
+        <strong>Before you send</strong>
+        <span>Get a calmer, clearer version of what you meant to say.</span>
+      </div>
+      <div class="summary-pill">
+        <strong>During the chat</strong>
+        <span>Ask @aria for support, perspective, and conversational momentum.</span>
+      </div>
+      <div class="summary-pill">
+        <strong>When connecting</strong>
+        <span>Find people by phone, handle, or invite code depending on what feels safest.</span>
+      </div>
+      <div class="summary-pill">
+        <strong>With privacy in mind</strong>
+        <span>Server-side processing, permission-based features, and clear support access.</span>
+      </div>
+    </section>
+
+    <section class="section surface reveal" id="features">
+      <div class="section-heading">
+        <div>
+          <h2>What makes GoodTalk different</h2>
+          <p>
+            This is not just another messenger with AI bolted on. GoodTalk is built around the
+            emotional reality of close conversations: drafts that come out too sharp, moments
+            where you need help finding the right words, and the need to stay kind without
+            sounding robotic.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card span-4">
+          <h3>AI-powered coaching</h3>
+          <p>
+            Coach Mode helps reshape charged messages into something more grounded, constructive,
+            and easier to hear. It is designed around compassionate communication principles,
+            so the app helps reduce escalation instead of adding to it.
+          </p>
+        </article>
+
+        <article class="feature-card span-4">
+          <h3>Touch-ups that respect your voice</h3>
+          <p>
+            Not every message needs heavy coaching. Touch Up Mode improves wording, grammar,
+            and clarity while keeping your original meaning intact, which makes GoodTalk useful
+            for everyday chats too.
+          </p>
+        </article>
+
+        <article class="feature-card span-4">
+          <h3>@aria in the flow</h3>
+          <p>
+            Mention <strong>@aria</strong> directly inside a conversation to ask for advice,
+            perspective, brainstorming help, or context-aware nudges while things are unfolding.
+          </p>
+        </article>
+
+        <article class="feature-card span-6">
+          <h3>Designed for real connection</h3>
+          <ul class="feature-list">
+            <li>Message review and approval before sending</li>
+            <li>Private coaching insights attached to refined messages</li>
+            <li>Premium features for deeper coaching and more AI usage</li>
+            <li>Accessibility-first approach with VoiceOver and Dynamic Type support</li>
+          </ul>
+        </article>
+
+        <article class="feature-card span-6">
+          <h3>Easy ways to find the right person</h3>
+          <ul class="feature-list">
+            <li>Find someone by phone when enabled</li>
+            <li>Use a unique <strong>@username</strong> instead of sharing your number</li>
+            <li>Create short-lived invite codes when you want a cleaner handoff</li>
+            <li>See familiar names and handles inside the app, not just anonymous accounts</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface reveal" id="how-it-works">
+      <div class="section-heading">
+        <div>
+          <h2>How it works in practice</h2>
+          <p>
+            GoodTalk keeps the workflow simple enough for real life: type naturally, ask for help
+            when you want it, review the improved message, then send something closer to what you
+            actually meant.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-step">
+          <div class="timeline-marker">1</div>
+          <div>
+            <h3>Write the honest draft</h3>
+            <p>
+              Start with the message you would normally send. GoodTalk is built around helping with
+              real emotion, not forcing you into canned language from the start.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-step">
+          <div class="timeline-marker">2</div>
+          <div>
+            <h3>Refine, touch up, or ask Aria</h3>
+            <p>
+              Choose the level of support you need. Use a light touch-up, a fuller coaching pass,
+              or bring <strong>@aria</strong> into the conversation when you want ideas, wording,
+              or perspective in the moment.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-step">
+          <div class="timeline-marker">3</div>
+          <div>
+            <h3>Approve and send with more confidence</h3>
+            <p>
+              Review the final draft before it goes out. The result is a conversation that sounds
+              more like your best self and less like your worst five seconds.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface reveal">
+      <div class="section-heading">
+        <div>
+          <h2>Trust matters here</h2>
+          <p>
+            Communication tools only work if people feel safe using them. The app is structured
+            around permission-based features, server-side AI processing, and optional discovery
+            paths that let people connect in the way that feels right for them.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="summary-card span-7">
+          <h3>Privacy-minded product choices</h3>
+          <p>
+            GoodTalk can use phone verification, contact matching, usernames, and optional
+            location context for <strong>@aria</strong>, but those experiences depend on the
+            permissions and settings a person chooses. Messaging, support, and AI features are
+            backed by Firebase services, with AI requests handled server-side.
+          </p>
+        </article>
+
+        <article class="summary-card span-5">
+          <h3>Built for support, not guesswork</h3>
+          <p>
+            Need help with sign-in, discovery, subscriptions, or feedback? The support page gives
+            people a direct route to the team, and the privacy page explains the app in clear,
+            plain language.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface reveal">
+      <div class="section-heading">
+        <div>
+          <h2>Everything important is easy to reach</h2>
+          <p>
+            The landing page now works as the front door, while support and privacy each have
+            their own dedicated page so visitors are not forced to hunt for basic trust signals.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <a class="link-card support-card span-6" href="support.html">
+          <div>
+            <h3>Support</h3>
+            <p>
+              Get help with sign-in, AI features, discovery, invite codes, premium, or bug reports.
+            </p>
+          </div>
+          <strong>Open page</strong>
         </a>
-        <a class="button button-secondary" href="#features">
-          View Features
+
+        <a class="link-card support-card span-6" href="privacy.html">
+          <div>
+            <h3>Privacy</h3>
+            <p>
+              Read the current plain-language summary of what data GoodTalk uses and why.
+            </p>
+          </div>
+          <strong>Open page</strong>
         </a>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card card-half">
-        <h2>Need help?</h2>
-        <p>
-          For support, questions, bug reports, or feedback, email us at:
-        </p>
-        <p style="margin-top: 12px;">
-          <a class="email" href="mailto:support.goodtalk@gmail.com" style="color:#ffffff; font-weight:700; text-decoration:none;">
-            support.goodtalk@gmail.com
-          </a>
-        </p>
-      </article>
-
-      <article class="card card-half">
-        <h2>What GoodTalk does</h2>
-        <p>
-          GoodTalk helps you send messages that are clearer, more respectful, and more true
-          to what you mean.
-        </p>
-      </article>
-
-      <article class="card" id="features">
-        <h2>Core features</h2>
-        <ul class="features">
-          <li>
-            <strong>Coach Mode</strong><br />
-            Refine your message before sending. GoodTalk helps reduce harsh wording,
-            improve tone, and make conversations more thoughtful.
-          </li>
-          <li>
-            <strong>Touch Up Mode</strong><br />
-            Keep your original meaning while improving grammar, clarity, and phrasing.
-            It respects your voice instead of replacing it.
-          </li>
-          <li>
-            <strong>Aria Mode</strong><br />
-            Ask <strong>@aria</strong> for help directly in your chat. Get suggestions,
-            perspective, and support while the conversation is happening.
-          </li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>Feedback</h2>
-        <p>
-          We are always improving GoodTalk. If something is not working as expected or you
-          have ideas for making the app better, send us a message. We would love to hear from you.
-        </p>
-      </article>
+    <section class="section surface reveal">
+      <div class="cta-grid">
+        <article class="cta-card">
+          <h3>Want to talk to the team?</h3>
+          <p>
+            Questions, feedback, bug reports, or partnership inquiries are all welcome.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:support.goodtalk@gmail.com">support.goodtalk@gmail.com</a>
+            <a class="button button-secondary" href="support.html">Visit support</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <div class="footer">
-      © 2026 GoodTalk. All rights reserved.
-    
-      <p style="margin-top:12px;">
-        <a href="privacy.html" style="color:#cbd5e1; text-decoration:none;">
-          Privacy Policy
-        </a>
-      </p>
-    </div>
+    <footer class="footer">
+      <span>&copy; 2026 GoodTalk. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
