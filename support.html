@@ -19,19 +19,47 @@
         </span>
         <span class="brand-copy">
           <span class="brand-title">GoodTalk</span>
-          <span class="brand-subtitle">Support</span>
+          <span class="brand-subtitle">Thoughtful messaging for modern conversations</span>
         </span>
       </a>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="privacy.html">Privacy</a>
-        <a class="button button-primary topbar-cta" href="mailto:support.goodtalk@gmail.com">Email support</a>
-      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="topbar-menu-support"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="topbar-menu" id="topbar-menu-support">
+        <nav class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="privacy.html">Privacy</a>
+        </nav>
+        <div class="mobile-nav-extra">
+          <a class="nav-link" href="index.html#overview">Overview</a>
+          <a class="nav-link" href="index.html#modes">Modes</a>
+          <a class="nav-link" href="index.html#features">Features</a>
+          <a class="nav-link" href="index.html#pricing">Pricing</a>
+        </div>
+        <div class="topbar-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-icon theme-toggle-icon-sun">☀</span>
+              <span class="theme-toggle-thumb"></span>
+              <span class="theme-toggle-icon theme-toggle-icon-moon">☾</span>
+            </span>
+          </button>
+          <a class="button button-primary topbar-cta" href="mailto:support.goodtalk@gmail.com">Email support</a>
+        </div>
+      </div>
     </header>
 
     <section class="page-hero reveal">
-      <span class="section-kicker">Support</span>
+      <span class="section-kicker">Get Help</span>
       <h1>Help that stays focused on solving the issue.</h1>
       <p>
         This page is here for support, troubleshooting, and practical questions about the app. If
@@ -66,8 +94,8 @@
           <p>Coach, Touch-up, <strong>@aria</strong>, message refinement, approvals, AI budget behavior, and mode availability.</p>
         </article>
         <article class="support-topic-card">
-          <h3>Discovery and invites</h3>
-          <p>Phone discoverability, contact matching, invite codes, and finding someone by <strong>@username</strong>.</p>
+          <h3>Discovery and connection</h3>
+          <p>Phone discoverability, contact matching, and finding someone by <strong>@username</strong>.</p>
         </article>
         <article class="support-topic-card">
           <h3>Premium and billing</h3>
@@ -124,7 +152,7 @@
         </article>
         <article class="faq-card">
           <h3>Do I need to share my phone number to connect with someone?</h3>
-          <p>No. GoodTalk supports several connection paths, including phone-based discovery, <strong>@username</strong>, contact matching, and invite codes.</p>
+          <p>No. GoodTalk supports several connection paths, including phone-based discovery, <strong>@username</strong>, and contact matching.</p>
         </article>
         <article class="faq-card">
           <h3>Is Coach available on the free version?</h3>

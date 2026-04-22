@@ -19,24 +19,51 @@
         </span>
         <span class="brand-copy">
           <span class="brand-title">GoodTalk</span>
-          <span class="brand-subtitle">Privacy</span>
+          <span class="brand-subtitle">Thoughtful messaging for modern conversations</span>
         </span>
       </a>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="support.html">Support</a>
-        <a class="button button-primary topbar-cta" href="https://www.apple.com/app-store/">App Store</a>
-      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="topbar-menu-privacy"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="topbar-menu" id="topbar-menu-privacy">
+        <nav class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="support.html">Support</a>
+        </nav>
+        <div class="mobile-nav-extra">
+          <a class="nav-link" href="index.html#overview">Overview</a>
+          <a class="nav-link" href="index.html#modes">Modes</a>
+          <a class="nav-link" href="index.html#features">Features</a>
+          <a class="nav-link" href="index.html#pricing">Pricing</a>
+        </div>
+        <div class="topbar-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-icon theme-toggle-icon-sun">☀</span>
+              <span class="theme-toggle-thumb"></span>
+              <span class="theme-toggle-icon theme-toggle-icon-moon">☾</span>
+            </span>
+          </button>
+          <a class="button button-primary topbar-cta" href="https://www.apple.com/app-store/">View in the App Store</a>
+        </div>
+      </div>
     </header>
 
     <section class="page-hero reveal">
-      <span class="section-kicker">Privacy Overview</span>
+      <span class="section-kicker">Privacy</span>
       <h1>Plain-language privacy for a product built around sensitive conversations.</h1>
       <p>
-        GoodTalk is designed to help with emotionally important messaging, so privacy and user control
-        matter. This page explains the app in public-facing, readable terms without exposing internal
-        implementation details that do not belong on a public website.
+        GoodTalk is built for meaningful conversations, so privacy and user control matter.
+        This page gives a simple overview of how the app uses information to keep the product working well.
       </p>
     </section>
 
@@ -86,8 +113,8 @@
           <h3>Contacts access</h3>
           <p>
             If you allow contacts access, GoodTalk can help identify which people in your contacts are
-            already on the app. The product is built to use privacy-aware matching rather than exposing
-            raw contact lists as a public-facing feature.
+            already on the app. The product is designed to use privacy-aware matching rather than exposing
+            raw contact lists in the product experience.
           </p>
         </article>
       </div>
@@ -203,17 +230,6 @@
             <li>Manage Premium through the App Store</li>
           </ul>
         </article>
-      </div>
-    </section>
-
-    <section class="section section-shell reveal">
-      <div class="privacy-summary-card">
-        <strong>Public-facing note</strong>
-        <p>
-          This page is intentionally written as a public, plain-language overview. It is meant to help people
-          understand how the product works at a user level without publishing internal code, secrets, private
-          operational details, or product-specific implementation logic that does not belong on a marketing site.
-        </p>
       </div>
     </section>
 

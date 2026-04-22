@@ -19,20 +19,41 @@
         </span>
         <span class="brand-copy">
           <span class="brand-title">GoodTalk</span>
-          <span class="brand-subtitle">Thoughtful messaging for real relationships</span>
+          <span class="brand-subtitle">Thoughtful messaging for modern conversations</span>
         </span>
       </a>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="#overview">Overview</a>
-        <a class="nav-link" href="#modes">Modes</a>
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#pricing">Pricing</a>
-        <a class="nav-link" href="privacy.html">Privacy</a>
-        <a class="nav-link" href="support.html">Support</a>
-      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="topbar-menu-home"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
 
-      <a class="button button-primary topbar-cta" href="https://www.apple.com/app-store/">View on the App Store</a>
+      <div class="topbar-menu" id="topbar-menu-home">
+        <nav class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="#overview">Overview</a>
+          <a class="nav-link" href="#modes">Modes</a>
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+          <a class="nav-link" href="privacy.html">Privacy</a>
+          <a class="nav-link" href="support.html">Support</a>
+        </nav>
+        <div class="topbar-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-icon theme-toggle-icon-sun">☀</span>
+              <span class="theme-toggle-thumb"></span>
+              <span class="theme-toggle-icon theme-toggle-icon-moon">☾</span>
+            </span>
+          </button>
+          <a class="button button-primary topbar-cta" href="https://www.apple.com/app-store/">Get it on iPhone</a>
+        </div>
+      </div>
     </header>
 
     <section class="hero reveal" id="overview">
@@ -40,78 +61,41 @@
         <div class="eyebrow">Now on iPhone</div>
         <h1>A calmer, smarter way to message through the moments that matter.</h1>
         <p class="lead">
-          GoodTalk helps you say difficult things with more clarity, kindness, and confidence.
-          It blends messaging with subtle AI support, so you can refine a draft, ask for help in
-          the moment, and stay closer to what you actually meant to say.
+          GoodTalk helps you shape messages with more clarity, care, and confidence.
+          Refine a draft, bring in Aria mid-chat, or give a message a lighter finish before you send.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="https://www.apple.com/app-store/">Download on the App Store</a>
+          <a class="button button-primary" href="https://www.apple.com/app-store/">Get it on iPhone</a>
           <a class="button button-secondary" href="#modes">Explore the three modes</a>
-        </div>
-
-        <div class="hero-points" aria-label="Highlights">
-          <span class="hero-point">Coach for harder conversations</span>
-          <span class="hero-point">Aria for in-the-moment help</span>
-          <span class="hero-point">Touch-up for fast polish</span>
-          <span class="hero-point">Private connection and discovery options</span>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="hero-device">
-          <figure class="iphone-shot hero-shot">
-            <div class="iphone-shell">
-              <div class="iphone-island" aria-hidden="true"></div>
-              <div class="iphone-screen">
-                <img src="assets/conversation-list.png" alt="GoodTalk chat list showing recent conversations and contact presence." />
+          <div class="hero-device-stage">
+            <figure class="iphone-shot hero-shot">
+              <div class="iphone-shell">
+                <div class="iphone-island" aria-hidden="true"></div>
+                <div class="iphone-screen">
+                  <img src="assets/conversation-list.png" alt="GoodTalk chat list showing recent conversations and contact presence." />
+                </div>
               </div>
-            </div>
-          </figure>
+            </figure>
 
-          <div class="floating-card floating-card-top">
-            <strong>Built for emotionally important conversations</strong>
-            <span>Subtle support before you send, and while the chat is still happening.</span>
-          </div>
-
-          <div class="floating-card floating-card-bottom">
-            <strong>Download free</strong>
-            <span>Start with messaging, Touch-up, and Aria access, then upgrade when you want more depth.</span>
-          </div>
-
-          <div class="hero-signal-card">
-            <div class="hero-signal-copy">
-              <strong>Three ways to get help</strong>
-              <span>Coach for depth, Aria for live help, Touch-up for quick polish.</span>
-            </div>
-            <div class="hero-signal-pills">
-              <span>Coach</span>
-              <span>Aria</span>
-              <span>Touch-up</span>
+            <div class="hero-signal-card">
+              <div class="hero-signal-copy">
+                <strong>Choose the mode that fits the moment</strong>
+                <span>Coach, Aria, and Touch-up stay close without crowding the conversation.</span>
+              </div>
+              <div class="hero-signal-pills">
+                <a href="#mode-coach">Coach</a>
+                <a href="#mode-aria">Aria</a>
+                <a href="#mode-touch-up">Touch-up</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-shell reveal">
-      <div class="intro-grid">
-      <div class="intro-card">
-        <strong>Before you send</strong>
-        <p>Turn a reactive draft into something clearer, steadier, and easier to hear.</p>
-      </div>
-      <div class="intro-card">
-        <strong>During the chat</strong>
-        <p>Ask <strong>@aria</strong> for wording, perspective, or practical help while the conversation unfolds.</p>
-      </div>
-      <div class="intro-card">
-        <strong>When you connect</strong>
-        <p>Find people by phone, <strong>@username</strong>, contacts, or invite code depending on what feels right.</p>
-      </div>
-      <div class="intro-card">
-        <strong>As you grow</strong>
-        <p>Adjust chat settings, privacy controls, notifications, units, and Premium features as your needs evolve.</p>
-      </div>
       </div>
     </section>
 
@@ -151,7 +135,7 @@
         <a class="mode-card mode-card-aria" href="#mode-aria">
           <span class="mode-card-label">Aria</span>
           <h3>Help while the chat is alive</h3>
-          <p>Ask <strong>@aria</strong> for advice, wording, perspective, or practical support without leaving the conversation.</p>
+          <p>Ask <strong>@aria</strong> inside the thread and let it respond with the conversation already in view.</p>
         </a>
         <a class="mode-card mode-card-touch" href="#mode-touch-up">
           <span class="mode-card-label">Touch-up</span>
@@ -175,6 +159,78 @@
           <li>Can show a private coaching insight about why the message changed</li>
           <li>Premium-only mode for deeper communication support</li>
         </ul>
+
+        <div class="example-showcase example-showcase-carousel" data-carousel>
+          <div class="example-showcase-header">
+            <div>
+              <strong>Where Coach shines</strong>
+              <span>Different conversations, same calmer landing.</span>
+            </div>
+            <div class="example-carousel-controls">
+              <button class="example-carousel-button" type="button" data-carousel-prev aria-label="Previous Coach example">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="example-carousel-button" type="button" data-carousel-next aria-label="Next Coach example">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="example-carousel-viewport">
+            <div class="example-carousel-track">
+              <article class="example-card example-slide example-card-coach">
+              <span class="example-badge">Relationship</span>
+              <h3>When things have felt off lately</h3>
+              <p class="example-context">You want to bring up distance without sounding accusing or cold.</p>
+              <div class="example-block example-block-draft">
+                <small>Your draft</small>
+                <p>"You barely make time for us anymore and I'm tired of pretending it's fine."</p>
+              </div>
+              <div class="example-block example-block-result">
+                <small>Coach reframes</small>
+                <p>"I miss how connected we used to feel, and I want to talk about how we can make more space for each other again."</p>
+              </div>
+              <div class="example-note">Why it works: It keeps the emotion, drops the blame, and opens the door to a real conversation.</div>
+              </article>
+
+              <article class="example-card example-slide example-card-coach">
+              <span class="example-badge">Work</span>
+              <h3>When feedback needs to land well</h3>
+              <p class="example-context">You need to be direct with a teammate without making the exchange feel harsh.</p>
+              <div class="example-block example-block-draft">
+                <small>Your draft</small>
+                <p>"You keep missing details and it's slowing everyone down."</p>
+              </div>
+              <div class="example-block example-block-result">
+                <small>Coach reframes</small>
+                <p>"A few details have been slipping through lately, and I think tightening that up would make the whole project move more smoothly."</p>
+              </div>
+              <div class="example-note">Why it works: It stays clear, but makes the feedback easier to hear and respond to.</div>
+              </article>
+
+              <article class="example-card example-slide example-card-coach">
+              <span class="example-badge">Family</span>
+              <h3>When emotions are already running high</h3>
+              <p class="example-context">You want to explain how something felt without escalating the tension.</p>
+              <div class="example-block example-block-draft">
+                <small>Your draft</small>
+                <p>"You always dismiss me when I try to talk about this."</p>
+              </div>
+              <div class="example-block example-block-result">
+                <small>Coach reframes</small>
+                <p>"When this gets brushed aside, I end up feeling unheard. I'd really like us to talk it through more openly."</p>
+              </div>
+              <div class="example-note">Why it works: It names the feeling and makes a clear request without turning the moment into a fight.</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="example-carousel-dots" role="tablist" aria-label="Coach examples">
+            <button class="example-carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Show Coach example 1"></button>
+            <button class="example-carousel-dot" type="button" data-carousel-dot="1" aria-label="Show Coach example 2"></button>
+            <button class="example-carousel-dot" type="button" data-carousel-dot="2" aria-label="Show Coach example 3"></button>
+          </div>
+        </div>
       </div>
 
       <div class="mode-visual">
@@ -195,15 +251,76 @@
         <span class="section-kicker">Aria</span>
         <h2>A capable assistant, right inside the chat.</h2>
         <p>
-          Aria gives GoodTalk a more open-ended mode. Mention <strong>@aria</strong> to ask for help with
-          wording, perspective, planning, or practical questions without breaking the flow of the conversation.
+          Aria works from the conversation already on screen. Mention <strong>@aria</strong> and it can read the thread,
+          pick up on what each person said, and answer with context instead of acting like a blank chatbot.
         </p>
         <ul class="feature-list">
           <li>Use <strong>@aria</strong> directly inside a conversation</li>
-          <li>Helpful for advice, brainstorming, everyday questions, and perspective</li>
+          <li>Can react to the thread itself, not just the one line you typed</li>
+          <li>Helpful for advice, quick judgment calls, brainstorming, and everyday questions</li>
           <li>Supports measurement preferences and optional location-aware context</li>
           <li>Available on free with limits, with broader access on Premium</li>
         </ul>
+
+        <div class="example-showcase example-showcase-carousel" data-carousel>
+          <div class="example-showcase-header">
+            <div>
+              <strong>How people might use Aria</strong>
+              <span>Quick prompts, practical answers, right where the conversation is happening.</span>
+            </div>
+            <div class="example-carousel-controls">
+              <button class="example-carousel-button" type="button" data-carousel-prev aria-label="Previous Aria example">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="example-carousel-button" type="button" data-carousel-next aria-label="Next Aria example">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="example-carousel-viewport">
+            <div class="example-carousel-track">
+              <article class="example-card example-slide example-card-aria">
+              <span class="example-badge">Local ideas</span>
+              <h3>Find a spot nearby</h3>
+              <p class="example-context">You want a quick suggestion without leaving the chat.</p>
+              <div class="example-block example-block-prompt">
+                <small>@aria prompt</small>
+                <p>"@aria find a cozy restaurant near me for tonight."</p>
+              </div>
+              <div class="example-note example-note-answer">"You could try a small Italian place nearby with quieter seating, or a casual wine bar if you want something more relaxed."</div>
+              </article>
+
+              <article class="example-card example-slide example-card-aria">
+              <span class="example-badge">Perspective</span>
+              <h3>Let Aria call it</h3>
+              <p class="example-context">You want a fun, blunt read based on what both people already said in the thread.</p>
+              <div class="example-block example-block-prompt">
+                <small>@aria prompt</small>
+                <p>"@aria who is right?"</p>
+              </div>
+              <div class="example-note example-note-answer">"Sarah is more in the right here. You said you only texted after you were already running 40 minutes late, and Sarah said she was left waiting without a real heads-up. Based on that exchange, her frustration makes more sense."</div>
+              </article>
+
+              <article class="example-card example-slide example-card-aria">
+              <span class="example-badge">Planning</span>
+              <h3>Figure out the next move</h3>
+              <p class="example-context">You want ideas that are thoughtful but still easy to act on.</p>
+              <div class="example-block example-block-prompt">
+                <small>@aria prompt</small>
+                <p>"@aria give me three easy ways to make tonight feel special at home."</p>
+              </div>
+              <div class="example-note example-note-answer">"Cook something simple together, put phones away for an hour, or set up a low-key movie night with a small surprise snack."</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="example-carousel-dots" role="tablist" aria-label="Aria examples">
+            <button class="example-carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Show Aria example 1"></button>
+            <button class="example-carousel-dot" type="button" data-carousel-dot="1" aria-label="Show Aria example 2"></button>
+            <button class="example-carousel-dot" type="button" data-carousel-dot="2" aria-label="Show Aria example 3"></button>
+          </div>
+        </div>
       </div>
 
       <div class="mode-visual">
@@ -214,7 +331,7 @@
               <img src="assets/aria-chat.png" alt="GoodTalk chat where @aria helps with date-night dinner ideas in the middle of a conversation." />
             </div>
           </div>
-          <figcaption class="shot-caption">Ask <strong>@aria</strong> inside the thread when you want ideas, wording, or perspective without breaking the flow.</figcaption>
+          <figcaption class="shot-caption">Ask <strong>@aria</strong> inside the thread when you want ideas, perspective, or a judgment that takes the conversation into account.</figcaption>
         </figure>
       </div>
     </section>
@@ -234,6 +351,78 @@
           <li>Works naturally with the app's approval flow before a message is sent</li>
           <li>Included on free with usage limits and expanded on Premium</li>
         </ul>
+
+        <div class="example-showcase example-showcase-carousel" data-carousel>
+          <div class="example-showcase-header">
+            <div>
+              <strong>What Touch-up changes</strong>
+              <span>The meaning stays yours. The phrasing just lands better.</span>
+            </div>
+            <div class="example-carousel-controls">
+              <button class="example-carousel-button" type="button" data-carousel-prev aria-label="Previous Touch-up example">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="example-carousel-button" type="button" data-carousel-next aria-label="Next Touch-up example">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="example-carousel-viewport">
+            <div class="example-carousel-track">
+              <article class="example-card example-slide example-card-touch">
+              <span class="example-badge">Everyday text</span>
+              <h3>Clean up a rushed message</h3>
+              <p class="example-context">You typed fast, but the intent is already there.</p>
+              <div class="example-block example-block-draft">
+                <small>Original</small>
+                <p>"hey sorry im late traffic is awful can u start without me"</p>
+              </div>
+              <div class="example-block example-block-result">
+                <small>Touch-up</small>
+                <p>"Hey, sorry I'm late. Traffic is awful. Can you start without me?"</p>
+              </div>
+              <div class="example-note">Same meaning, just cleaner and easier to read.</div>
+              </article>
+
+              <article class="example-card example-slide example-card-touch">
+              <span class="example-badge">Sharper tone</span>
+              <h3>Soften the edges, not the point</h3>
+              <p class="example-context">You still want to be clear, just not harsher than you mean to be.</p>
+              <div class="example-block example-block-draft">
+                <small>Original</small>
+                <p>"You said you'd handle this and now I'm stuck dealing with it."</p>
+              </div>
+              <div class="example-block example-block-result">
+                <small>Touch-up</small>
+                <p>"I thought this was already handled, so I was caught off guard when it came back to me."</p>
+              </div>
+              <div class="example-note">The message still says the same thing, but it sounds less combative.</div>
+              </article>
+
+              <article class="example-card example-slide example-card-touch">
+              <span class="example-badge">Awkward wording</span>
+              <h3>Keep your voice, lose the mess</h3>
+              <p class="example-context">You know what you mean, but the wording feels clunky.</p>
+              <div class="example-block example-block-draft">
+                <small>Original</small>
+                <p>"I want hang later if your still around cause I kinda need get out a bit."</p>
+              </div>
+              <div class="example-block example-block-result">
+                <small>Touch-up</small>
+                <p>"I'd love to hang out later if you're still around. I could use getting out a little."</p>
+              </div>
+              <div class="example-note">It still sounds like you, just more natural and finished.</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="example-carousel-dots" role="tablist" aria-label="Touch-up examples">
+            <button class="example-carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Show Touch-up example 1"></button>
+            <button class="example-carousel-dot" type="button" data-carousel-dot="1" aria-label="Show Touch-up example 2"></button>
+            <button class="example-carousel-dot" type="button" data-carousel-dot="2" aria-label="Show Touch-up example 3"></button>
+          </div>
+        </div>
       </div>
 
       <div class="mode-visual">
@@ -250,13 +439,34 @@
     </section>
 
     <section class="section section-shell reveal">
+      <div class="intro-grid">
+      <div class="intro-card">
+        <strong>Before you send</strong>
+        <p>Turn a rough draft into something clearer and easier to hear.</p>
+      </div>
+      <div class="intro-card">
+        <strong>During the chat</strong>
+        <p>Bring in <strong>@aria</strong> without leaving the conversation.</p>
+      </div>
+      <div class="intro-card">
+        <strong>When you connect</strong>
+        <p>Find people by phone, <strong>@username</strong>, or contacts.</p>
+      </div>
+      <div class="intro-card">
+        <strong>As you grow</strong>
+        <p>Tune privacy, notifications, defaults, and Premium features to fit your style.</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section-shell reveal">
       <div class="cta-panel cta-panel-inline">
         <div>
           <span class="section-kicker">Ready to try it?</span>
-          <h2>Download GoodTalk and start with the mode that fits the moment.</h2>
+          <h2>Try GoodTalk and start with the mode that fits the moment.</h2>
         </div>
         <div class="button-row">
-          <a class="button button-primary" href="https://www.apple.com/app-store/">Open the App Store</a>
+          <a class="button button-primary" href="https://www.apple.com/app-store/">View in the App Store</a>
           <a class="button button-secondary" href="#pricing">See pricing</a>
         </div>
       </div>
@@ -310,7 +520,7 @@
             <li>Phone sign-in plus Apple and Google account options</li>
             <li><strong>@username</strong> handles so people can find you without sharing a number</li>
             <li>Phone discoverability when enabled</li>
-            <li>Invite-code pairing and contacts matching</li>
+            <li>Contacts matching for faster connection</li>
           </ul>
         </article>
 
@@ -354,6 +564,7 @@
           <h3>Try the product and build the habit.</h3>
           <p class="pricing-copy">
             Messaging is fully available, with limited access to Touch-up, Aria, and daily AI usage.
+            You can also try Premium free for 14 days before deciding.<sup class="footnote-mark">1</sup>
           </p>
           <ul class="feature-list">
             <li>Messaging</li>
@@ -361,6 +572,13 @@
             <li>Aria with limits</li>
             <li>Daily AI budget with limits</li>
           </ul>
+          <div class="pricing-inline-cta">
+            <a class="button button-secondary pricing-trial-button" href="https://www.apple.com/app-store/">
+              <span>Start premium for free</span>
+              <span class="pricing-trial-star" aria-hidden="true">✦</span>
+            </a>
+            <div class="pricing-trial-note">14-day trial<sup class="footnote-mark">1</sup></div>
+          </div>
         </article>
 
         <article class="pricing-card pricing-card-premium">
@@ -371,21 +589,22 @@
             <span>monthly</span>
           </div>
           <div class="price-stack price-stack-secondary">
+            <span class="pricing-value-hint">Best value</span>
             <strong>$99.9</strong>
-            <span>annual</span>
+            <span>annual<sup class="footnote-mark">2</sup></span>
           </div>
           <p class="pricing-copy">
-            Includes a 14-day free trial, Premium coaching, more AI room, and a fuller version of what makes GoodTalk special.
+            Includes a <strong>14-day free trial</strong><sup class="footnote-mark">1</sup>, Premium coaching, more AI room, and a fuller version of what makes GoodTalk special.
           </p>
           <ul class="feature-list">
             <li>Everything in Free</li>
             <li>Coach Mode</li>
             <li>Expanded Touch-up and Aria access</li>
             <li>Larger daily AI budget</li>
-            <li>Relationship insights</li>
+            <li>Deeper conversation insights</li>
           </ul>
           <div class="button-row">
-            <a class="button button-primary" href="https://www.apple.com/app-store/">View on the App Store</a>
+            <a class="button button-primary" href="https://www.apple.com/app-store/">View in the App Store</a>
           </div>
         </article>
       </div>
@@ -393,17 +612,21 @@
       <div class="pricing-note">
         Premium messaging is positioned as a better communication toolkit, not a requirement to use the app.
       </div>
+
+      <div class="pricing-footnotes" aria-label="Pricing notes">
+        <p><sup>1</sup> Trial availability may depend on App Store eligibility, region, and prior subscription history. See the App Store for current details.</p>
+        <p><sup>2</sup> `Best value` reflects the annual plan compared with the monthly list price before applicable taxes or storefront-specific adjustments.</p>
+      </div>
     </section>
 
     <section class="section section-shell reveal">
       <div class="section-header">
         <div>
           <span class="section-kicker">Trust</span>
-          <h2>Clear controls, sensible permissions, and public-facing pages that explain the product well.</h2>
+          <h2>Clear controls, sensible permissions, and easy ways to learn more.</h2>
         </div>
         <p>
-          GoodTalk includes privacy and support as part of the product experience. The detailed pages live separately,
-          but they follow the same design system and stay easy to reach.
+          Privacy and support stay close at hand, with the same calm design language as the rest of the site.
         </p>
       </div>
 
@@ -427,12 +650,12 @@
           <span class="section-kicker">GoodTalk</span>
           <h2>Make the next message a little easier to send.</h2>
           <p>
-            Download GoodTalk from the App Store and start free. When you want deeper help for harder conversations,
+            Try GoodTalk on iPhone and start free. When you want deeper help for harder conversations,
             Premium is there.
           </p>
         </div>
         <div class="button-row">
-          <a class="button button-primary" href="https://www.apple.com/app-store/">Download on the App Store</a>
+          <a class="button button-primary" href="https://www.apple.com/app-store/">Get it on iPhone</a>
           <a class="button button-secondary" href="support.html">Visit support</a>
         </div>
       </div>
@@ -441,7 +664,7 @@
     <footer class="footer">
       <div>
         <strong>GoodTalk</strong>
-        <span>Thoughtful messaging for modern relationships.</span>
+        <span>Thoughtful messaging for modern conversations.</span>
       </div>
       <div class="footer-links">
         <a href="#overview">Overview</a>
