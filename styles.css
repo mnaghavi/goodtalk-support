@@ -312,100 +312,38 @@ svg {
 }
 
 .iphone-shot {
+  position: relative;
   margin: 0;
 }
 
 .iphone-shell {
   position: relative;
-  width: min(100%, 388px);
-  padding: 24px 16px 18px;
-  border-radius: 52px;
-  overflow: visible;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.1)),
-    linear-gradient(160deg, #0b0d12, #262c3a 52%, #0e1116);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
-    0 32px 80px rgba(17, 24, 39, 0.24);
-}
-
-.iphone-shell::before,
-.iphone-shell::after {
-  content: "";
-  position: absolute;
-  top: 154px;
-  width: 4px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.08));
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-.iphone-shell::before {
-  left: -4px;
-  height: 74px;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.1),
-    0 98px 0 0 rgba(255, 255, 255, 0.16),
-    0 98px 0 1px rgba(0, 0, 0, 0.1),
-    0 142px 0 0 rgba(255, 255, 255, 0.16),
-    0 142px 0 1px rgba(0, 0, 0, 0.1);
-}
-
-.iphone-shell::after {
-  right: -4px;
-  height: 120px;
+  width: min(100%, 420px);
+  aspect-ratio: 1520 / 3068;
+  border-radius: 62px;
+  background: url("assets/iphone-17-pro-max-silver-frame.png") center / contain no-repeat;
+  box-shadow: 0 30px 85px rgba(17, 24, 39, 0.18);
 }
 
 .iphone-island {
-  position: absolute;
-  z-index: 2;
-  top: 17px;
-  left: 50%;
-  width: 122px;
-  height: 28px;
-  border-radius: 999px;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.96);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 2px 8px rgba(0, 0, 0, 0.28);
+  display: none;
 }
 
 .iphone-screen {
-  position: relative;
-  overflow: hidden;
-  border-radius: 40px;
-  background: #000;
-  aspect-ratio: 430 / 932;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
-    inset 0 0 0 16px #040508,
-    0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-
-.iphone-screen::before {
-  content: "";
   position: absolute;
-  inset: 0;
   z-index: 1;
-  border-radius: inherit;
-  pointer-events: none;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-    inset 0 0 0 16px rgba(4, 5, 8, 0.96);
+  inset: 3.26% 6.58%;
+  overflow: hidden;
+  border-radius: 46px;
+  background: #000;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .iphone-screen img {
-  position: relative;
-  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(0.932);
-  transform-origin: center;
-  border-radius: 26px;
+  border-radius: inherit;
 }
 
 .hero-shot .iphone-shell {
