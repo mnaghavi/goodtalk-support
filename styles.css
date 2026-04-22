@@ -110,11 +110,16 @@ svg {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: linear-gradient(145deg, #5271e6, #6e7fe0);
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  box-shadow: 0 10px 22px rgba(74, 103, 214, 0.2);
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 22px rgba(74, 103, 214, 0.14);
+}
+
+.brand-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  object-fit: cover;
 }
 
 .brand-copy {
@@ -306,6 +311,74 @@ svg {
   padding: 20px;
 }
 
+.iphone-shot {
+  margin: 0;
+}
+
+.iphone-shell {
+  position: relative;
+  width: min(100%, 388px);
+  padding: 18px 10px 10px;
+  border-radius: 48px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.12)),
+    linear-gradient(160deg, #171923, #2a3043 55%, #161923);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 28px 70px rgba(17, 24, 39, 0.2);
+}
+
+.iphone-island {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 118px;
+  height: 26px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.88);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.iphone-screen {
+  overflow: hidden;
+  border-radius: 36px;
+  background: #f7f8fd;
+  aspect-ratio: 430 / 932;
+  box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.06);
+}
+
+.iphone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-shot .iphone-shell {
+  width: min(100%, 402px);
+  transform: rotate(3deg);
+}
+
+.hero-shot .iphone-screen {
+  background:
+    radial-gradient(circle at top, rgba(74, 103, 214, 0.14), transparent 28%),
+    #f4f6fb;
+}
+
+.iphone-shot-compact .iphone-shell {
+  width: min(100%, 320px);
+}
+
+.shot-caption {
+  max-width: 320px;
+  margin: 14px auto 0;
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
 .device-frame {
   width: min(100%, 380px);
   padding: 14px;
@@ -479,8 +552,61 @@ svg {
   bottom: 10%;
 }
 
+.hero-signal-card {
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  display: grid;
+  gap: 14px;
+  width: 250px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow-md);
+}
+
+.hero-signal-copy strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.hero-signal-copy span {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.hero-signal-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-signal-pills span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(74, 103, 214, 0.08);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .section {
-  margin-top: 26px;
+  margin-top: 30px;
+}
+
+.section-shell {
+  padding: 32px;
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.72));
+  box-shadow: var(--shadow-lg);
 }
 
 .section-header {
@@ -667,12 +793,30 @@ svg {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
   gap: 26px;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 24px;
   padding: 28px;
   border-radius: 34px;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow-lg);
+}
+
+#mode-coach {
+  background:
+    radial-gradient(circle at top right, rgba(111, 100, 200, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.74));
+}
+
+#mode-aria {
+  background:
+    radial-gradient(circle at top right, rgba(31, 136, 167, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.74));
+}
+
+#mode-touch-up {
+  background:
+    radial-gradient(circle at top right, rgba(74, 103, 214, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.74));
 }
 
 .mode-copy h2 {
@@ -757,6 +901,33 @@ svg {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 14px;
+}
+
+.feature-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 18px;
+  border-radius: 32px;
+  background: rgba(244, 247, 252, 0.8);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.feature-showcase-copy h3 {
+  margin: 14px 0 10px;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  max-width: 12ch;
+}
+
+.feature-showcase-copy p {
+  margin: 0;
+  max-width: 54ch;
+  color: var(--text-soft);
+  line-height: 1.8;
 }
 
 .mini-chip {
@@ -960,7 +1131,8 @@ svg {
   .hero,
   .mode-detail,
   .section-header,
-  .cta-panel-inline {
+  .cta-panel-inline,
+  .feature-showcase {
     grid-template-columns: 1fr;
   }
 
@@ -971,6 +1143,12 @@ svg {
 
   .floating-card {
     display: none;
+  }
+
+  .hero-signal-card {
+    position: static;
+    width: min(100%, 320px);
+    margin: 18px auto 0;
   }
 }
 
@@ -984,6 +1162,7 @@ svg {
   .hero,
   .page-hero,
   .mode-detail,
+  .section-shell,
   .intro-card,
   .category-card,
   .trust-card,
@@ -1023,6 +1202,11 @@ svg {
 
   .device-screen {
     min-height: 560px;
+  }
+
+  .iphone-shell {
+    width: min(100%, 360px);
+    margin: 0 auto;
   }
 
   .topbar-cta {

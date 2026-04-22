@@ -14,7 +14,9 @@
   <main class="site-shell">
     <header class="topbar">
       <a class="brand" href="index.html" aria-label="GoodTalk home">
-        <span class="brand-mark">G</span>
+        <span class="brand-mark">
+          <img class="brand-icon" src="assets/app-icon.png" alt="" />
+        </span>
         <span class="brand-copy">
           <span class="brand-title">GoodTalk</span>
           <span class="brand-subtitle">Thoughtful messaging for real relationships</span>
@@ -58,38 +60,14 @@
 
       <div class="hero-visual">
         <div class="hero-device">
-          <div class="device-frame">
-            <div class="device-topline">
-              <span>9:41</span>
-              <span>GoodTalk</span>
-            </div>
-
-            <div class="device-screen">
-              <div class="device-screen-header">
-                <div>
-                  <strong>Conversation with Sarah</strong>
-                  <span>Coach mode preview</span>
-                </div>
-                <span class="pill-label">Coach</span>
-              </div>
-
-              <div class="chat-thread">
-                <div class="bubble bubble-incoming">I feel like you are not hearing what I am actually saying.</div>
-                <div class="bubble bubble-outgoing">
-                  I hear that you are feeling unheard, and I want to understand better. Can we slow down and talk it through?
-                </div>
-                <div class="bubble bubble-system">
-                  <strong>Coach insight</strong>
-                  <span>Reflecting feelings first can lower defensiveness and keep the conversation open.</span>
-                </div>
-              </div>
-
-              <div class="device-composer">
-                <span>Message</span>
-                <button type="button">Refine</button>
+          <figure class="iphone-shot hero-shot">
+            <div class="iphone-shell">
+              <div class="iphone-island" aria-hidden="true"></div>
+              <div class="iphone-screen">
+                <img src="assets/conversation-list.png" alt="GoodTalk chat list showing recent conversations and contact presence." />
               </div>
             </div>
-          </div>
+          </figure>
 
           <div class="floating-card floating-card-top">
             <strong>Built for emotionally important conversations</strong>
@@ -100,11 +78,24 @@
             <strong>Download free</strong>
             <span>Start with messaging, Touch-up, and Aria access, then upgrade when you want more depth.</span>
           </div>
+
+          <div class="hero-signal-card">
+            <div class="hero-signal-copy">
+              <strong>Three ways to get help</strong>
+              <span>Coach for depth, Aria for live help, Touch-up for quick polish.</span>
+            </div>
+            <div class="hero-signal-pills">
+              <span>Coach</span>
+              <span>Aria</span>
+              <span>Touch-up</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section intro-grid reveal">
+    <section class="section section-shell reveal">
+      <div class="intro-grid">
       <div class="intro-card">
         <strong>Before you send</strong>
         <p>Turn a reactive draft into something clearer, steadier, and easier to hear.</p>
@@ -121,9 +112,10 @@
         <strong>As you grow</strong>
         <p>Adjust chat settings, privacy controls, notifications, units, and Premium features as your needs evolve.</p>
       </div>
+      </div>
     </section>
 
-    <section class="section reveal" id="modes">
+    <section class="section section-shell reveal" id="modes">
       <div class="section-header">
         <div>
           <span class="section-kicker">Three Core Modes</span>
@@ -186,27 +178,15 @@
       </div>
 
       <div class="mode-visual">
-        <div class="device-frame">
-          <div class="device-topline">
-            <span>9:41</span>
-            <span>Coach</span>
-          </div>
-          <div class="device-screen">
-            <div class="device-section-title">Before and after</div>
-            <div class="compare-card">
-              <small>Original draft</small>
-              <p>It feels like you never listen to me when I bring this up.</p>
-            </div>
-            <div class="compare-card compare-card-refined">
-              <small>Refined version</small>
-              <p>I feel unheard when this comes up, and I want us to understand each other better. Can we talk about it more calmly?</p>
-            </div>
-            <div class="coach-note">
-              <strong>Why it changed</strong>
-              <span>Less blame, more clarity, and a direct request to keep the conversation open.</span>
+        <figure class="iphone-shot">
+          <div class="iphone-shell">
+            <div class="iphone-island" aria-hidden="true"></div>
+            <div class="iphone-screen">
+              <img src="assets/coach-chat.png" alt="Coach mode conversation with reframed reply and a private coach insight card." />
             </div>
           </div>
-        </div>
+          <figcaption class="shot-caption">Coach reframes a tense draft and explains the communication shift in a private insight card.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -227,26 +207,15 @@
       </div>
 
       <div class="mode-visual">
-        <div class="device-frame">
-          <div class="device-topline">
-            <span>9:41</span>
-            <span>Aria</span>
-          </div>
-          <div class="device-screen">
-            <div class="chat-thread">
-              <div class="bubble bubble-outgoing">@aria what should I say if I want to bring this up gently?</div>
-              <div class="bubble bubble-aria">
-                <strong>@aria</strong>
-                <span>You could start with what you are feeling, then make a clear request. That usually lands better than leading with blame.</span>
-              </div>
-              <div class="chip-row">
-                <span class="mini-chip">@aria who is right?</span>
-                <span class="mini-chip">@aria how is the weather?</span>
-                <span class="mini-chip">@aria help me word this</span>
-              </div>
+        <figure class="iphone-shot">
+          <div class="iphone-shell">
+            <div class="iphone-island" aria-hidden="true"></div>
+            <div class="iphone-screen">
+              <img src="assets/aria-chat.png" alt="GoodTalk chat where @aria helps with date-night dinner ideas in the middle of a conversation." />
             </div>
           </div>
-        </div>
+          <figcaption class="shot-caption">Ask <strong>@aria</strong> inside the thread when you want ideas, wording, or perspective without breaking the flow.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -262,35 +231,25 @@
           <li>Best for everyday texting, quick edits, and better readability</li>
           <li>Designed to preserve your voice instead of rewriting the whole message</li>
           <li>Useful when you want polish without a full coaching pass</li>
+          <li>Works naturally with the app's approval flow before a message is sent</li>
           <li>Included on free with usage limits and expanded on Premium</li>
         </ul>
       </div>
 
       <div class="mode-visual">
-        <div class="device-frame">
-          <div class="device-topline">
-            <span>9:41</span>
-            <span>Touch-up</span>
-          </div>
-          <div class="device-screen">
-            <div class="compare-card">
-              <small>Your draft</small>
-              <p>Hey sorry i missed this, can we do tomorrow instead? todays been kinda crazy.</p>
-            </div>
-            <div class="compare-card compare-card-refined">
-              <small>Touch-up</small>
-              <p>Hey, sorry I missed this. Could we do tomorrow instead? Today has been a little hectic.</p>
-            </div>
-            <div class="device-composer">
-              <span>Touch-up ready</span>
-              <button type="button">Send</button>
+        <figure class="iphone-shot">
+          <div class="iphone-shell">
+            <div class="iphone-island" aria-hidden="true"></div>
+            <div class="iphone-screen">
+              <img src="assets/approval-flow.png" alt="GoodTalk approval flow showing a refined draft that can be approved, edited, or reviewed before sending." />
             </div>
           </div>
-        </div>
+          <figcaption class="shot-caption">A refined draft stays reviewable, so you can approve it, edit it, or understand why it changed before it goes out.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="section section-shell reveal">
       <div class="cta-panel cta-panel-inline">
         <div>
           <span class="section-kicker">Ready to try it?</span>
@@ -303,7 +262,7 @@
       </div>
     </section>
 
-    <section class="section reveal" id="features">
+    <section class="section section-shell reveal" id="features">
       <div class="section-header">
         <div>
           <span class="section-kicker">Features</span>
@@ -313,6 +272,25 @@
           GoodTalk is more than one clever message tool. It is a communication product with discovery,
           personalization, privacy, and subscription choices built around how people actually talk.
         </p>
+      </div>
+
+      <div class="feature-showcase">
+        <div class="feature-showcase-copy">
+          <span class="section-kicker">What the product feels like</span>
+          <h3>Messaging first, with AI support layered in where it helps.</h3>
+          <p>
+            The app stays rooted in real conversations. You see who is active, move between chats naturally,
+            and only bring in more help when you want it.
+          </p>
+        </div>
+        <figure class="iphone-shot iphone-shot-compact">
+          <div class="iphone-shell">
+            <div class="iphone-island" aria-hidden="true"></div>
+            <div class="iphone-screen">
+              <img src="assets/conversation-list.png" alt="GoodTalk conversation list with recent chats, presence indicators, and bottom navigation." />
+            </div>
+          </div>
+        </figure>
       </div>
 
       <div class="category-grid">
@@ -358,7 +336,7 @@
       </div>
     </section>
 
-    <section class="section reveal" id="pricing">
+    <section class="section section-shell reveal" id="pricing">
       <div class="section-header">
         <div>
           <span class="section-kicker">Pricing</span>
@@ -417,7 +395,7 @@
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="section section-shell reveal">
       <div class="section-header">
         <div>
           <span class="section-kicker">Trust</span>
@@ -443,7 +421,7 @@
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="section section-shell reveal">
       <div class="cta-panel">
         <div>
           <span class="section-kicker">GoodTalk</span>
