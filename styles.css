@@ -294,7 +294,7 @@ body[data-theme="dark"] .menu-toggle {
 .theme-toggle-thumb {
   position: absolute;
   top: 2px;
-  left: 2px;
+  left: 3px;
   width: 18px;
   height: 18px;
   border-radius: 999px;
@@ -377,7 +377,7 @@ body[data-theme="dark"] .theme-toggle-track {
 }
 
 body[data-theme="dark"] .theme-toggle-thumb {
-  transform: translateX(22px);
+  transform: translateX(18px);
   background: linear-gradient(180deg, rgba(124, 150, 255, 0.95), rgba(96, 118, 214, 0.92));
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
 }
