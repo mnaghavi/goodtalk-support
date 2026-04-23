@@ -1067,6 +1067,17 @@ body[data-theme="dark"] #mode-touch-up {
   max-width: 13ch;
 }
 
+.mode-copy,
+.mode-visual,
+.example-showcase,
+.example-carousel-viewport,
+.example-carousel-track,
+.example-card,
+.example-slide,
+.example-block {
+  min-width: 0;
+}
+
 .mode-copy p {
   margin: 0;
   color: var(--text-soft);
@@ -1248,6 +1259,7 @@ body[data-theme="dark"] .example-block-result {
   margin: 0;
   color: var(--text-soft);
   line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 
 .example-badge {
@@ -1298,6 +1310,7 @@ body[data-theme="dark"] .example-block-result {
 .example-note-answer {
   margin: 0;
   line-height: 1.75;
+  overflow-wrap: anywhere;
 }
 
 .example-block-result {
@@ -1923,6 +1936,150 @@ body[data-theme="dark"] .nav-link.is-active {
   .footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .mode-detail {
+    gap: 18px;
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .mode-copy p,
+  .feature-list {
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .feature-list {
+    padding-left: 16px;
+  }
+
+  .example-showcase {
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .example-showcase-header {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .example-showcase-header strong {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+
+  .example-showcase-header span {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .example-carousel-controls {
+    align-self: flex-end;
+    gap: 8px;
+  }
+
+  .example-carousel-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .example-carousel-viewport {
+    border-radius: 20px;
+  }
+
+  .example-card,
+  .example-slide {
+    gap: 10px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .example-card h3 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+
+  .example-badge {
+    min-height: 28px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .example-context,
+  .example-note,
+  .example-block p,
+  .example-note-answer {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .example-block {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .example-block small {
+    margin-bottom: 6px;
+    font-size: 10px;
+  }
+
+  .example-card-aria .example-note-answer {
+    margin-top: 12px;
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .example-carousel-dots {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .example-carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .example-carousel-dot.is-active {
+    width: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mode-detail,
+  .section-shell,
+  .page-hero,
+  .cta-panel {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .example-showcase {
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .example-card,
+  .example-slide {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .example-block {
+    padding: 11px;
+    border-radius: 14px;
+  }
+
+  .example-showcase-header span,
+  .example-context,
+  .example-note,
+  .example-block p,
+  .example-note-answer {
+    font-size: 13.5px;
+    line-height: 1.58;
   }
 }
 
