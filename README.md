@@ -1,6 +1,6 @@
-# GoodTalk Support
+# GoodTalk Public Site
 
-This repository hosts the public support page for **GoodTalk**.
+This repository hosts the public website for **GoodTalk**.
 
 GoodTalk is a messaging app that helps people communicate more clearly, calmly, and confidently. It includes AI-powered features like:
 
@@ -10,17 +10,20 @@ GoodTalk is a messaging app that helps people communicate more clearly, calmly, 
 
 ## Purpose
 
-This site is used as the official **Support URL** for the GoodTalk App Store listing.
+This site is used as the public support, privacy, and legal destination for the GoodTalk App Store listing.
 
 ## Support
 
 If you need help, have questions, or want to report an issue, contact:
 
-**support.goodtalk@gmail.com**
+**support@good-talk.app**
 
 ## What this repo contains
 
-- `index.html` — public support page for App Store users
+- `index.html` — marketing landing page
+- `support.html` — public support page
+- `privacy.html` — privacy policy and overview
+- `terms-of-use.html` — terms of use
 
 ## Notes
 

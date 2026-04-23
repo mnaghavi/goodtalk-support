@@ -390,6 +390,11 @@ body[data-theme="dark"] .theme-toggle-icon-moon {
   color: #eef3fb;
 }
 
+body[data-theme="dark"] .legal-fine-print-card {
+  border-color: rgba(148, 163, 184, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 .topbar-cta {
   white-space: nowrap;
 }
@@ -1621,10 +1626,63 @@ body[data-theme="dark"] .example-block-result {
   font-size: 18px;
 }
 
+.support-mail-note {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .policy-stack,
 .faq-stack {
   display: grid;
   gap: 16px;
+}
+
+.legal-fine-print {
+  gap: 22px;
+}
+
+.legal-fine-print-header h2 {
+  max-width: 14ch;
+}
+
+.legal-fine-print-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.legal-fine-print-card {
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: var(--shadow-sm);
+}
+
+.legal-fine-print-card h3 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.legal-fine-print-card p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.62;
+  color: var(--text-muted);
+}
+
+.legal-fine-print-card p + p {
+  margin-top: 10px;
+}
+
+.legal-fine-print-card strong {
+  color: var(--text);
 }
 
 .cta-panel {
@@ -1827,7 +1885,8 @@ body[data-theme="dark"] .nav-link.is-active {
   .pricing-grid,
   .support-topic-grid,
   .support-checklist-grid,
-  .policy-grid {
+  .policy-grid,
+  .legal-fine-print-grid {
     grid-template-columns: 1fr;
   }
 
