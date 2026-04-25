@@ -7,10 +7,12 @@ GoodTalk is a messaging app that helps people communicate more clearly, calmly, 
 - **Coach Mode** for refining messages before sending
 - **Touch Up Mode** for improving grammar and clarity while keeping your original voice
 - **Aria Mode** for in-chat help and guidance using `@aria`
+- Message review, approval, and recent-message editing
+- Profile, privacy, discovery, and account controls
 
 ## Purpose
 
-This site is used as the public support, privacy, and legal destination for the GoodTalk App Store listing.
+This site is used as the public marketing, support, privacy, and legal destination for the GoodTalk App Store listing.
 
 ## Support
 
@@ -24,7 +26,4 @@ If you need help, have questions, or want to report an issue, contact:
 - `support.html` — public support page
 - `privacy.html` — privacy policy and overview
 - `terms-of-use.html` — terms of use
-
-## Notes
-
-This is a lightweight public support site. The main app repository remains private.
+- `assets/` — app icon, screenshots, and device-frame assets
