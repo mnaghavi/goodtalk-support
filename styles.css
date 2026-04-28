@@ -1648,9 +1648,68 @@ body[data-theme="dark"] .example-block-result {
 }
 
 .policy-stack,
-.faq-stack {
+.faq-stack,
+.faq-list {
   display: grid;
   gap: 16px;
+}
+
+.faq-item {
+  overflow: hidden;
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  list-style: none;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(74, 103, 214, 0.1);
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  margin: 16px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.faq-item a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+body[data-theme="dark"] .faq-item p {
+  border-top-color: rgba(148, 163, 184, 0.14);
 }
 
 .legal-fine-print {
