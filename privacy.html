@@ -48,7 +48,7 @@
           "isPartOf": {
             "@id": "https://good-talk.app/#website"
           },
-          "dateModified": "2026-04-22"
+          "dateModified": "2026-05-06"
         },
         {
           "@type": "BreadcrumbList",
@@ -132,8 +132,9 @@
       <p>
         GoodTalk may also process account details, messages, profile settings, optional discovery data, and support
         communications to operate the service. Certain features rely on third-party services for authentication,
-        real-time messaging, push notifications, subscriptions, storage, and server-side AI processing. GoodTalk is
-        not an advertising-based service.
+        real-time messaging, push notifications, subscriptions, and storage. AI features use
+        OpenAI for server-side AI processing only after you allow AI data sharing in the app. GoodTalk is not an
+        advertising-based service.
       </p>
     </section>
 
@@ -190,10 +191,20 @@
         <article class="policy-detail-card">
           <h3>AI processing for Coach, Touch-up, and Aria</h3>
           <p>
-            When you use Coach or Touch-up, or when you call <strong>@aria</strong> in chat, GoodTalk uses
-            server-side AI processing to refine messages, generate coaching guidance, and return assistant responses.
-            To provide those features, relevant message content, drafts, and limited conversation context needed for
-            the request may be sent to AI processing providers acting on GoodTalk's behalf.
+            When you first try Coach, Touch-up, or <strong>@aria</strong>, GoodTalk asks for your permission before
+            sending personal data to OpenAI for AI processing. If you allow AI data sharing, GoodTalk may send OpenAI
+            the message draft or AI request you ask it to process, eligible existing and future conversation messages
+            authored by users who have allowed AI data sharing, AI-generated conversation summaries derived only from
+            eligible messages, display names and tone/profile details for users who have also allowed AI data sharing,
+            selected AI settings such as model and measurement units, and optional location context when you approve
+            location-based Aria help.
+          </p>
+          <p>
+            Your partner's message text, display name, tone profile, or any summary derived from that partner's
+            messages is not sent to OpenAI unless that partner has also allowed AI data sharing. If one conversation
+            participant allows AI data sharing and the other does not, GoodTalk sends only the allowing participant's
+            own content and AI summaries scoped to allowing participants. Normal messaging remains available if you
+            do not allow AI data sharing.
           </p>
         </article>
 
@@ -248,8 +259,8 @@
         <article class="policy-card">
           <h3>Server-side AI providers</h3>
           <p>
-            AI-enabled features depend on server-side model providers to process supported requests and return
-            responses for refinement, coaching, and assistant functions.
+            AI-enabled features use OpenAI to process supported requests and return responses for refinement,
+            coaching, and assistant functions after the user allows AI data sharing in the app.
           </p>
         </article>
         <article class="policy-card">
@@ -286,6 +297,7 @@
             <li>Choose a default style for new chats</li>
             <li>Adjust notification and sound preferences</li>
             <li>Choose Aria measurement preferences</li>
+            <li>Allow, revoke, or re-enable AI data sharing for OpenAI-powered features</li>
             <li>Manage Premium through the App Store</li>
           </ul>
         </article>
@@ -312,7 +324,7 @@
           <h2>Full policy and legal disclosures.</h2>
         </div>
         <p>
-          Last updated: April 22, 2026. This section contains the fuller policy language, legal disclosures, and
+          Last updated: May 6, 2026. This section contains the fuller policy language, legal disclosures, and
           contact paths related to the collection, use, disclosure, retention, and deletion of information.
         </p>
       </div>
@@ -335,7 +347,7 @@
         <article class="legal-fine-print-card">
           <h3>Categories of data</h3>
           <p>
-            Depending on how you use GoodTalk, the app may process account identifiers, profile information, message content, draft content, timestamps, presence and visibility settings, phone verification data, discoverability settings, optional contact-matching inputs, optional location context for Aria, notification tokens, subscription status, and support communications.
+            Depending on how you use GoodTalk, the app may process account identifiers, profile information, message content, draft content, timestamps, presence and visibility settings, phone verification data, discoverability settings, optional contact-matching inputs, optional location context for Aria, notification tokens, subscription status, AI data-sharing consent status, and support communications.
           </p>
         </article>
 
@@ -349,7 +361,7 @@
         <article class="legal-fine-print-card">
           <h3>Providers and processing partners</h3>
           <p>
-            GoodTalk relies on service providers to operate the app. Based on the current app stack, those providers may include Apple for App Store billing, Sign in with Apple, and platform services; Google for Sign in with Google; Firebase and Google Cloud for authentication, messaging, storage, notifications, and server-side functions; and OpenAI for AI-assisted processing used by Coach, Touch-up, and Aria.
+            GoodTalk relies on service providers to operate the app. Based on the current app stack, those providers may include Apple for App Store billing, Sign in with Apple, and platform services; Google for Sign in with Google; Firebase and Google Cloud for authentication, messaging, storage, notifications, and server-side functions; and OpenAI for AI-assisted processing used by Coach, Touch-up, and Aria after the requesting user allows AI data sharing.
           </p>
           <p>
             GoodTalk shares personal information with service providers only where reasonably necessary to operate,
@@ -367,11 +379,21 @@
             for professional advice, medical advice, legal advice, crisis support, or other expert guidance.
           </p>
           <p>
-            If you do not want content sent for optional assistant processing in Aria, do not call
-            <strong>@aria</strong> in chat. Coach and Touch-up are AI-assisted features by design when you use those
-            modes. If you want to revoke consent for future AI-assisted processing tied to your account and request
-            deletion of eligible data, you can delete your account in the app or contact
+            You can decline AI data sharing and continue using normal messaging. You can also revoke or re-enable
+            AI data sharing from Settings. Revoking AI data sharing blocks future OpenAI processing tied to your
+            account; it does not change your free or Premium subscription limits. If you want to request deletion of
+            eligible data, you can delete your account in the app or contact
             <a href="mailto:contact@good-talk.app?subject=GoodTalk%20Privacy%20Request&amp;body=Hi%20GoodTalk%2C%0A%0AI%20have%20a%20privacy-related%20question%20or%20request%20about%3A%0A-%20My%20account%20or%20username%3A%0A-%20The%20request%20details%3A%0A%0AThanks.">contact@good-talk.app</a>.
+          </p>
+        </article>
+
+        <article class="legal-fine-print-card">
+          <h3>OpenAI processing details</h3>
+          <p>
+            For AI features, GoodTalk sends only the data needed for the requested AI task and only within the
+            consent scope described above. GoodTalk uses OpenAI API services. OpenAI states that API data is not
+            used to train or improve OpenAI models unless the API customer opts in, and that abuse-monitoring logs
+            may be retained for up to 30 days unless a different retention control applies.
           </p>
         </article>
 
@@ -406,7 +428,7 @@
         <article class="legal-fine-print-card">
           <h3>Children and sensitive use</h3>
           <p>
-            GoodTalk is not intended for children under 13, or under any higher minimum age required by local law. Because the product can involve personal or emotionally sensitive conversations, users should avoid sharing information they would not want processed to operate messaging, support, and AI-assisted features.
+            GoodTalk is not intended for children under 13, or under any higher minimum age required by local law. Because the product can involve personal or emotionally sensitive conversations, users should avoid sharing information they would not want processed to operate messaging, support, and AI-assisted features. AI-assisted features require in-app permission before personal data is sent to OpenAI.
           </p>
         </article>
 
